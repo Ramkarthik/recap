@@ -7,5 +7,5 @@ node_compat = true
 enabled = true
 
 [[routes]]
-pattern = "api.yourdomain.com/*"
+pattern = "api.recapfm.com/*"
 custom_domain = true
