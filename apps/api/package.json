@@ -1,0 +1,25 @@
+{
+  "name": "@recap/api",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "bun run src/index.ts",
+    "start": "bun run src/index.ts"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20251205.0",
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@hono/node-server": "^1.19.6",
+    "@mozilla/readability": "^0.6.0",
+    "@prisma/client": "^7.1.0",
+    "@recap/db": "workspace:*",
+    "better-auth": "^1.4.5",
+    "hono": "^4.10.7",
+    "jsdom": "^27.2.0"
+  }
+}

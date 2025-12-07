@@ -1,0 +1,17 @@
+{
+  "name": "@recap/background",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "bun run src/index.ts",
+    "start": "bun run src/index.ts"
+  },
+  "dependencies": {
+    "@ai-sdk/openai": "^2.0.77",
+    "@aws-sdk/client-s3": "^3.946.0",
+    "@recap/db": "workspace:*",
+    "@recap/shared": "workspace:*",
+    "ai": "^5.0.107",
+    "dotenv": "^17.2.3"
+  }
+}

@@ -1,0 +1,16 @@
+{
+    "name": "recap",
+    "private": true,
+    "workspaces": [
+        "apps/*",
+        "packages/*"
+    ],
+    "scripts": {
+        "dev": "bun --filter '*' dev",
+        "build": "bun --filter '*' build"
+    },
+    "devDependencies": {
+        "@types/node": "^24.10.1",
+        "typescript": "^5.9.3"
+    }
+}
