@@ -4,7 +4,9 @@
   "type": "module",
   "scripts": {
     "dev": "bun run src/index.ts",
-    "start": "bun run src/index.ts"
+    "start": "bun run src/index.ts",
+    "build": "echo 'No build needed - Wrangler handles bundling'",
+    "deploy": "wrangler deploy",
   },
   "devDependencies": {
     "@cloudflare/workers-types": "^4.20251205.0",
