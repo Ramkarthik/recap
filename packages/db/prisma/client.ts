@@ -1,12 +1,11 @@
 import { withAccelerate } from '@prisma/extension-accelerate'
 import { PrismaClient } from './generated/prisma/client'
-import { PrismaPg } from '@prisma/adapter-pg'
+import 'dotenv/config';
 
-const connectionString = `${process.env.DATABASE_URL}`
-
-const adapter = new PrismaPg({ connectionString })
+if (!process.env.DATABASE_URL) {
+    throw new Error('DATABASE_URL is not defined');
+}
 
 export const prisma = new PrismaClient({
-    //accelerateUrl: process.env.DATABASE_URL!,
-    adapter,
+    accelerateUrl: process.env.DATABASE_URL!,
 }).$extends(withAccelerate())
