@@ -2,6 +2,7 @@ generator client {
   provider = "prisma-client"
   runtime         = "workerd"
   output   = "./generated/prisma"
+  engineType = "client"
 }
 
 datasource db {
